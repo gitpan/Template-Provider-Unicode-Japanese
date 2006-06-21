@@ -1,5 +1,5 @@
 abstract: Decode all templates by Unicode::Japanese
-author: Hironori Yoshida  C<< <yoshida@cpan.org> >>
+author: Hironori Yoshida C<< <yoshida@cpan.org> >>
 distribution_type: module
 generated_by: Module::Install version 0.630
 license: perl
@@ -9,7 +9,7 @@ no_index:
     - inc
     - t
 requires: 
-  Template: 0
+  Template::Config: 0
   Unicode::Japanese: 0
   version: 0
-version: 0.01
+version: 0.02

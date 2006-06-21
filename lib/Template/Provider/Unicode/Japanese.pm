@@ -1,13 +1,13 @@
 #
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 # $Source: /home/cvs/Template-Provider-Unicode-Japanese/lib/Template/Provider/Unicode/Japanese.pm,v $
-# $Date: 2006/06/21 19:09:31 $
+# $Date: 2006/06/21 21:07:04 $
 #
 package Template::Provider::Unicode::Japanese;
 use strict;
 use warnings;
 use version;
-our $VERSION = version->new(qw$Revision: 1.1 $);
+our $VERSION = version->new(qw$Revision: 1.2 $);
 
 use Template::Config;
 use Unicode::Japanese;
@@ -34,7 +34,7 @@ Template::Provider::Unicode::Japanese - Decode all templates by Unicode::Japanes
 
 =head1 VERSION
 
-This document describes Template::Provider::Unicode::Japanese $Revision: 1.1 $
+This document describes Template::Provider::Unicode::Japanese $Revision: 1.2 $
 
 =head1 SYNOPSIS
 
@@ -71,7 +71,7 @@ Template::Provider::Unicode::Japanese requires no configuration files or environ
 
 =head1 DEPENDENCIES
 
-L<Template>, L<Unicode::Japanese>
+L<Template::Provider>, L<Unicode::Japanese>
 
 =head1 INCOMPATIBILITIES
 
@@ -79,7 +79,11 @@ None reported.
 
 =head1 BUGS AND LIMITATIONS
 
-The ASCII template can not have utf8 flag.
+=over
+
+=item ASCII template can not have utf8 flag.
+
+=back
 
 Please report any bugs or feature requests to
 C<bug-template-provider-unicode-japanese@rt.cpan.org>, or through the web interface at
@@ -89,7 +93,7 @@ your bug as I make changes.
 
 =head1 AUTHOR
 
-Hironori Yoshida  C<< <yoshida@cpan.org> >>
+Hironori Yoshida C<< <yoshida@cpan.org> >>
 
 =head1 LICENSE AND COPYRIGHT
 
