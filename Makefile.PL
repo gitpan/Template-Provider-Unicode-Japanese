@@ -1,15 +1,10 @@
-#!/usr/bin/env perl
 #
-# $Revision: 1.2 $
-# $Source: /home/cvs/Template-Provider-Unicode-Japanese/Makefile.PL,v $
-# $Date: 2006/06/21 21:06:56 $
+# $Id: Makefile.PL,v 1.4 2007/05/04 08:01:15 hironori.yoshida Exp $
 #
+package main;
 use strict;
 use warnings;
-our $VERSION = eval {
-    require version;
-    version->new(qw$Revision: 1.2 $);
-};
+our $VERSION = eval { require version; version::qv('1.2.1') };
 
 use inc::Module::Install;
 eval {
@@ -18,7 +13,8 @@ eval {
 };
 
 name 'Template-Provider-Unicode-Japanese';
-version '0.02';
+version "$VERSION";
+perl_version '5.006';
 all_from 'lib/Template/Provider/Unicode/Japanese.pm';
 
 requires 'version'           => 0;
@@ -26,3 +22,5 @@ requires 'Template::Config'  => 0;
 requires 'Unicode::Japanese' => 0;
 
 WriteAll;
+
+1;

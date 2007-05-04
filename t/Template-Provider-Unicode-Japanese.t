@@ -1,23 +1,19 @@
 #!/usr/bin/env perl
 #
-# $Revision: 1.1 $
-# $Source: /home/cvs/Template-Provider-Unicode-Japanese/t/Template-Provider-Unicode-Japanese.t,v $
-# $Date: 2006/06/21 19:09:33 $
+# $Id: Template-Provider-Unicode-Japanese.t,v 1.2 2007/05/04 07:58:53 hironori.yoshida Exp $
 #
 use strict;
 use warnings;
-use version;
-our $VERSION = version->new(qw$Revision: 1.1 $);
+use version; our $VERSION = qv('1.2.1');
 
 use blib;
-use Encode::Guess ( Encode->encodings(':all') );
+use Encode::Guess qw(iso-2022-jp shiftjis euc-jp);
 use FindBin qw($Bin);
 use Template;
 use Template::Provider::Unicode::Japanese;
 use Test::More tests => 11;
 
-my $provider =
-  Template::Provider::Unicode::Japanese->new(
+my $provider = Template::Provider::Unicode::Japanese->new(
     { INCLUDE_PATH => "$Bin/data/" } );
 isa_ok( $provider, $Template::Config::PROVIDER );
 

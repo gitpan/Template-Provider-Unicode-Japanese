@@ -1,13 +1,10 @@
 #
-# $Revision: 1.2 $
-# $Source: /home/cvs/Template-Provider-Unicode-Japanese/lib/Template/Provider/Unicode/Japanese.pm,v $
-# $Date: 2006/06/21 21:07:04 $
+# $Id: Japanese.pm,v 1.3 2007/05/04 07:58:52 hironori.yoshida Exp $
 #
 package Template::Provider::Unicode::Japanese;
 use strict;
 use warnings;
-use version;
-our $VERSION = version->new(qw$Revision: 1.2 $);
+use version; our $VERSION = qv('1.2.1');
 
 use Template::Config;
 use Unicode::Japanese;
@@ -34,7 +31,7 @@ Template::Provider::Unicode::Japanese - Decode all templates by Unicode::Japanes
 
 =head1 VERSION
 
-This document describes Template::Provider::Unicode::Japanese $Revision: 1.2 $
+This document describes Template::Provider::Unicode::Japanese version 1.2.1
 
 =head1 SYNOPSIS
 
@@ -64,6 +61,8 @@ This provider makes all templates utf8 flagged by Unicode::Japanese.
 It decode the template to utf8.
 
 =head1 DIAGNOSTICS
+
+None.
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
@@ -97,7 +96,7 @@ Hironori Yoshida C<< <yoshida@cpan.org> >>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2006, Hironori Yoshida C<< <yoshida@cpan.org> >>. All rights reserved.
+Copyright (c) 2006-2007, Hironori Yoshida C<< <yoshida@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
